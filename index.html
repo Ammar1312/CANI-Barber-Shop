@@ -3,427 +3,472 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CANI Barbershop</title>
+  <title>CANI Barber Shop</title>
+  <meta
+    name="description"
+    content="CANI Barber Shop v Kranju združuje natančno striženje, urejanje brade in prefinjen studijski ambient za moške, ki cenijo dovršen videz."
+  />
+  <meta
+    name="keywords"
+    content="CANI Barber Shop, barber Kranj, brivnica Kranj, fade Kranj, urejanje brade, premium barber Slovenia"
+  />
+  <meta name="theme-color" content="#0a0908" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CANI Barber Shop" />
+  <meta
+    property="og:description"
+    content="Premium brivski studio v Kranju za natančen fade, urejeno brado in dovršen videz."
+  />
+  <meta property="og:image" content="images/enterijer/enterijer.jpg" />
+  <meta property="og:locale" content="sl_SI" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CANI Barber Shop" />
+  <meta
+    name="twitter:description"
+    content="Premium brivski studio v Kranju za natančen fade, urejeno brado in dovršen videz."
+  />
+  <meta name="twitter:image" content="images/enterijer/enterijer.jpg" />
+  <link rel="icon" type="image/jpeg" href="images/logo cani_1.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo cani_1.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-brand">
+      <img src="images/logo cani_1.jpeg" alt="" class="loader-logo" />
+      <div class="loader-line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
   <div class="scroll-progress" aria-hidden="true">
     <span class="scroll-progress-bar"></span>
   </div>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="#" class="logo">
-        <img src="images/logo-clean.png" alt="CANI Barbershop logo" class="logo-mark" />
-        <span class="logo-text">CANI BARBERSHOP</span>
+      <a href="#top" class="logo">
+        <img src="images/logo cani_1.jpeg" alt="Logotip CANI Barber Shop" class="logo-mark" />
+        <span class="logo-text sr-only">CANI Barber Shop</span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="#onas">O nas</a>
         <a href="#storitve">Storitve</a>
-        <a href="#rezultati">Rezultati</a>
+        <a href="#rezultati">Izbrani rezi</a>
+        <a href="#salon">Salon</a>
+        <a href="images/CENIK.pdf" target="_blank" rel="noreferrer">Cenik</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <span class="hero-badge">Premium barber studio . Kranj</span>
+      <div class="hero-backdrop"></div>
+      <div class="hero-ambient-lines" aria-hidden="true"></div>
+      <div class="container hero-shell">
+        <div class="hero-wordmark" aria-hidden="true">CANI</div>
+        <div class="hero-copy" data-reveal>
+          <span class="section-kicker">Premium brivski studio . Kranj</span>
+          <p class="hero-overline">Sodoben slog. Izbran značaj.</p>
           <h1>
-            Fade. Brada.
-            <span>Brez kompromisov.</span>
+            CANI Barber Shop
+            <span>za moške, ki cenijo dovršen videz.</span>
           </h1>
           <p class="hero-text">
-            Sodobna brivnica, kjer zdruzujemo natancnost, stil in vrhunski videz.
-            Poskrbimo za clean fade, urejeno brado in samozavesten izgled.
+            Precizen fade, urejena brada in miren studijski ambient na enem mestu.
           </p>
-          <p class="hero-typed-line">
-            Specializirani za
-            <span class="typed-accent" id="typed-accent">skin fade</span>
-          </p>
-          <div class="hero-buttons">
-            <a href="#kontakt" class="btn btn-primary">Rezerviraj termin</a>
-            <a href="#storitve" class="btn btn-secondary">Cene storitev</a>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Rezerviraj</a>
+            <a href="#storitve" class="btn btn-secondary">Pogledaj usluge</a>
+            <a href="images/CENIK.pdf" target="_blank" rel="noreferrer" class="btn btn-secondary">Odpri cenik</a>
           </div>
-          <div class="hero-quick-links" aria-label="Quick contact actions">
-            <a href="tel:040697069">Poklici</a>
+          <p class="hero-typed-line">
+            Fokus na
+            <span class="typed-accent" id="typed-accent">precizen fade</span>
+          </p>
+        </div>
+
+        <aside class="hero-aside" data-reveal>
+          <div class="hero-frame">
+            <img src="images/cani-barber.jpg" alt="Portret barberja CANI" />
+          </div>
+
+          <div class="hero-meta-card">
+            <div>
+              <span class="meta-label">Studijsko vzdušje</span>
+              <strong>Dovršeno striženje. Mirno vzdušje.</strong>
+            </div>
+            <p>
+              Vsak obisk je zasnovan kot izkušnja, kjer se natančnost, estetika in občutek za slog združijo v celoto.
+            </p>
+          </div>
+
+          <div class="hero-facts">
+            <article class="fact-card">
+              <span>Ocena na Googlu</span>
+              <strong>5.0</strong>
+            </article>
+            <article class="fact-card">
+              <span>Specialiteta</span>
+              <strong>Fade + brada</strong>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="signature-strip">
+      <div class="signature-row">
+        <div class="signature-track">
+          <span>BREZ KOMPROMISOV</span>
+          <span>DETAJL NAREDI RAZLIKO</span>
+          <span>CANI BARBER SHOP</span>
+          <span>SLOG Z ZNAČAJEM</span>
+          <span>NATANČNOST VSAKIČ</span>
+          <span>BREZ KOMPROMISOV</span>
+          <span>DETAJL NAREDI RAZLIKO</span>
+          <span>CANI BARBER SHOP</span>
+          <span>SLOG Z ZNAČAJEM</span>
+          <span>NATANČNOST VSAKIČ</span>
+          <span>BREZ KOMPROMISOV</span>
+          <span>DETAJL NAREDI RAZLIKO</span>
+          <span>CANI BARBER SHOP</span>
+          <span>SLOG Z ZNAČAJEM</span>
+          <span>NATANČNOST VSAKIČ</span>
+        </div>
+      </div>
+      <div class="signature-row reverse">
+        <div class="signature-track">
+          <span>ČIST REZ</span>
+          <span>MOČAN VTIS</span>
+          <span>PREMIUM STUDIO</span>
+          <span>UREJENA BRADA</span>
+          <span>DOVRŠEN VIDEZ</span>
+          <span>ČIST REZ</span>
+          <span>MOČAN VTIS</span>
+          <span>PREMIUM STUDIO</span>
+          <span>UREJENA BRADA</span>
+          <span>DOVRŠEN VIDEZ</span>
+          <span>ČIST REZ</span>
+          <span>MOČAN VTIS</span>
+          <span>PREMIUM STUDIO</span>
+          <span>UREJENA BRADA</span>
+          <span>DOVRŠEN VIDEZ</span>
+        </div>
+      </div>
+      <div class="signature-row">
+        <div class="signature-track">
+          <span>IZBRAN ZNAČAJ</span>
+          <span>BREZHIBEN FINISH</span>
+          <span>STUDIO CANI</span>
+          <span>RITEM DETAJLA</span>
+          <span>SODOBEN SLOG</span>
+          <span>IZBRAN ZNAČAJ</span>
+          <span>BREZHIBEN FINISH</span>
+          <span>STUDIO CANI</span>
+          <span>RITEM DETAJLA</span>
+          <span>SODOBEN SLOG</span>
+          <span>IZBRAN ZNAČAJ</span>
+          <span>BREZHIBEN FINISH</span>
+          <span>STUDIO CANI</span>
+          <span>RITEM DETAJLA</span>
+          <span>SODOBEN SLOG</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="onas" class="about section-space">
+      <div class="container about-grid">
+        <div class="about-copy" data-reveal>
+          <span class="section-kicker">O nas</span>
+          <h2>Natančnost, mir in dober okus.</h2>
+          <p>
+            CANI je studio za čiste reze, urejene brade in dovršen rezultat brez odvečnega hrupa.
+          </p>
+          <p class="heritage-note">Detaji bën dallimin.</p>
+
+          <div class="about-points">
+            <article>
+              <span>01</span>
+              <h3>Podpisna natančnost</h3>
+              <p>Čist rez, mirna roka in brezhiben zaključek.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Občutek zasebnega studia</h3>
+              <p>Temen ambient, dober fokus in bolj osebna izkušnja.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="storitve" class="services section-space">
+      <div class="container section-heading" data-reveal>
+        <span class="section-kicker">Storitve</span>
+        <h2>Cenik, ki deluje prefinjeno.</h2>
+      </div>
+
+      <div class="container services-layout">
+        <div class="cenik-panel" data-reveal>
+          <div class="cenik-panel-head">
+            <span class="section-kicker">CANI cenik</span>
+            <p>Jasen pregled storitev, časa in cen v bolj studijskem, elegantnem formatu.</p>
+          </div>
+
+          <div class="cenik-board cenik-board-main">
+            <div class="cenik-columns-labels" aria-hidden="true">
+              <span>Storitev</span>
+              <span>Trajanje</span>
+              <span>Cena</span>
+            </div>
+
+            <div class="cenik-row highlight">
+              <strong>Moško striženje klasično</strong>
+              <small>30-45 min</small>
+              <span>15 EUR</span>
+            </div>
+
+            <div class="cenik-row">
+              <strong>Britje glave</strong>
+              <small>20-30 min</small>
+              <span>10 EUR</span>
+            </div>
+
+            <div class="cenik-row">
+              <strong>Urejanje brade klasično</strong>
+              <small>20 min</small>
+              <span>8 EUR</span>
+            </div>
+
+            <div class="cenik-row">
+              <strong>Urejanje brade z britvijo</strong>
+              <small>20-30 min</small>
+              <span>10 EUR</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="services-side-card" data-reveal>
+          <span class="section-kicker">Dodatne storitve</span>
+          <h3>Barva, finish in dodatni detajli.</h3>
+          <div class="cenik-board">
+            <div class="cenik-row">
+              <strong>Barvanje las</strong>
+              <small>45-60 min</small>
+              <span>15 EUR</span>
+            </div>
+            <div class="cenik-row">
+              <strong>Umivanje las</strong>
+              <small>10 min</small>
+              <span>3 EUR</span>
+            </div>
+            <div class="cenik-row">
+              <strong>Urejanje ovratnika</strong>
+              <small>10-15 min</small>
+              <span>5 EUR</span>
+            </div>
+            <div class="cenik-row">
+              <strong>Barvanje brade</strong>
+              <small>20-30 min</small>
+              <span>10 EUR</span>
+            </div>
+            <div class="cenik-row highlight">
+              <strong>Fade + brada</strong>
+              <small>60-75 min</small>
+              <span>od 23 EUR</span>
+            </div>
+          </div>
+          <a href="images/CENIK.pdf" target="_blank" rel="noreferrer" class="text-link">Odpri uradni cenik</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="vibe-strip-section" data-vibe-strip>
+      <div class="vibe-strip-shell">
+        <div class="vibe-strip vibe-strip-top" aria-hidden="true">
+          <div class="vibe-strip-track">
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+          </div>
+        </div>
+
+        <div class="vibe-strip vibe-strip-middle" aria-hidden="true">
+          <div class="vibe-strip-track">
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+          </div>
+        </div>
+
+        <div class="vibe-strip vibe-strip-bottom" aria-hidden="true">
+          <div class="vibe-strip-track">
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+            <span>BARBERSHOP VIBES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rezultati" class="gallery section-space">
+      <div class="container gallery-head" data-reveal>
+        <span class="section-kicker">Izbrani rezi</span>
+        <h2>Radovi, ki prvi naredijo vtis.</h2>
+      </div>
+
+      <div class="container salon-story salon-scroll-gallery" data-gallery-scroll>
+        <div class="salon-stage">
+          <article class="gallery-card gallery-card-main" data-gallery-card>
+            <img src="images/enterijer/IMG-20260402-WA0007.jpg" alt="Dva frizerja pri delu v salonu CANI Barber Shop" />
+          </article>
+
+          <article class="gallery-card gallery-card-side gallery-card-side-a" data-gallery-card>
+            <img src="images/hero.jpg" alt="Dovršen detajl pričeske" />
+          </article>
+
+          <article class="gallery-card gallery-card-side gallery-card-side-b" data-gallery-card>
+            <img src="images/fade-texture.jpg" alt="Teksturiran fade rez" />
+          </article>
+
+          <article class="gallery-card gallery-card-side gallery-card-side-c" data-gallery-card>
+            <img src="images/beard cut.jpg" alt="Brada in detajl reza" />
+          </article>
+
+          <article class="gallery-card gallery-card-side gallery-card-side-d" data-gallery-card>
+            <img src="images/fade.jpg" alt="Moderna fade pričeska" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="salon" class="gallery section-space">
+      <div class="container gallery-head" data-reveal>
+        <span class="section-kicker">Salon</span>
+        <h2>Atmosfera prostora.</h2>
+      </div>
+
+      <div class="container gallery-bento work-bento">
+        <article class="gallery-card" data-reveal>
+          <img src="images/enterijer/IMG-20260402-WA0016.jpg" alt="Širši pogled na delo v salonu" />
+        </article>
+
+        <article class="gallery-card" data-reveal>
+          <img src="images/enterijer/IMG-20260402-WA0022(1).jpg" alt="Barberski stol in ambient salona" />
+        </article>
+
+        <article class="gallery-card" data-reveal>
+          <img src="images/enterijer/IMG-20260402-WA0037.jpg" alt="Širok pogled na notranjost salona CANI Barber Shop" />
+        </article>
+
+        <article class="gallery-card" data-reveal>
+          <img src="images/enterijer/IMG-20260402-WA0006.jpg" alt="Detajl recepcije in prostora v salonu" />
+        </article>
+      </div>
+    </section>
+
+    <section class="video-showcase">
+      <div class="container video-showcase-grid">
+        <div class="video-copy" data-reveal>
+          <span class="section-kicker">Atmosfera salona</span>
+          <h2>Prostor, svetloba in ritem salona v enem kadru.</h2>
+        </div>
+
+        <div class="video-frame" data-reveal>
+          <video
+            class="salon-video"
+            src="images/video-enterijer.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact section-space">
+      <div class="container contact-shell">
+        <div class="contact-copy" data-reveal>
+          <span class="section-kicker">Kontakt</span>
+          <h2>Rezervacija brez kompliciranja.</h2>
+
+          <div class="contact-cards">
+            <article class="contact-card">
+              <span>Lokacija</span>
+              <strong>Presernova cesta 6, Kranj</strong>
+            </article>
+            <article class="contact-card">
+              <span>Telefon</span>
+              <strong><a href="tel:040697069">040/697/069</a></strong>
+            </article>
+            <article class="contact-card">
+              <span>Delovni čas</span>
+              <strong>Pon - Pet 09:00 - 19:00</strong>
+              <small>Sobota 09:00 - 15:00 . Nedelja zaprto</small>
+            </article>
+          </div>
+
+          <div class="contact-links">
             <a href="https://instagram.com/canibarber" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://www.facebook.com/hasang.sopaj" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Presernova%20cesta%206,%20Kranj" target="_blank" rel="noreferrer">Google Maps</a>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="hero-parallax-wrap" data-parallax="0.06">
-            <div class="hero-image-card">
-              <img src="images/cani-barber.jpg" alt="CANI barber in logo shirt" />
-              <div class="image-label">
-                <span class="label-top">Podpis hise</span>
-                <h3>Premium Fade Detail</h3>
-              </div>
+        <form class="contact-form-box" data-reveal>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ime in priimek</label>
+              <input type="text" id="name" placeholder="Vnesite svoje ime" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefonska številka</label>
+              <input type="text" id="phone" placeholder="+386 40 697 069" />
             </div>
           </div>
 
-          <div class="stats-grid">
-            <div class="stat-card">
-              <span class="stat-label">Ocena strank</span>
-              <h3>4.9</h3>
-              <p>Zadovoljne stranke</p>
-            </div>
-            <div class="stat-card">
-              <span class="stat-label">Nas stil</span>
-              <h3>Clean</h3>
-              <p>Fade, brada, tekstura</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="marquee">
-      <div class="marquee-track">
-        <div class="marquee-content">
-          <span>BARBERSHOP CANI</span>
-          <span>.</span>
-          <span>FADE</span>
-          <span>.</span>
-          <span>BRADA</span>
-          <span>.</span>
-          <span>PREMIUM STYLE</span>
-          <span>.</span>
-          <span>BARBERSHOP CANI</span>
-          <span>.</span>
-          <span>FADE</span>
-          <span>.</span>
-          <span>BRADA</span>
-          <span>.</span>
-          <span>PREMIUM STYLE</span>
-          <span>.</span>
-        </div>
-
-        <div class="marquee-content" aria-hidden="true">
-          <span>BARBERSHOP CANI</span>
-          <span>.</span>
-          <span>FADE</span>
-          <span>.</span>
-          <span>BRADA</span>
-          <span>.</span>
-          <span>PREMIUM STYLE</span>
-          <span>.</span>
-          <span>BARBERSHOP CANI</span>
-          <span>.</span>
-          <span>FADE</span>
-          <span>.</span>
-          <span>BRADA</span>
-          <span>.</span>
-          <span>PREMIUM STYLE</span>
-          <span>.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat-box">
-          <h3>5.0</h3>
-          <p>Google ocena</p>
-        </div>
-        <div class="stat-box">
-          <h3>50+</h3>
-          <p>Google recenzij</p>
-        </div>
-        <div class="stat-box">
-          <h3>1000+</h3>
-          <p>Zadovoljnih strank</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="storitve" class="services">
-      <div class="container">
-        <h2>Storitve</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/fade-main.jpg" alt="Skin fade haircut" />
-            </div>
-            <h3>Skin Fade</h3>
-            <p>Moderen fade z natancnim prehodom in cistim zakljuckom.</p>
-            <span>od 28 EUR</span>
-          </div>
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/service-beard-sculpt.png" alt="Beard sculpt service" />
-            </div>
-            <h3>Beard Sculpt</h3>
-            <p>Oblikovanje brade za urejen, mocan in natancen izgled.</p>
-            <span>od 22 EUR</span>
-          </div>
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/fade-texture.jpg" alt="Classic taper haircut" />
-            </div>
-            <h3>Classic Taper</h3>
-            <p>Klasicen rez z modernim obcutkom in urejeno silhueto.</p>
-            <span>od 25 EUR</span>
-          </div>
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/service-buzz-cut.jpg" alt="Buzz cut haircut" />
-            </div>
-            <h3>Buzz Cut</h3>
-            <p>Minimalisticen, mocan rez z natancno linijo in clean finishom.</p>
-            <span>od 20 EUR</span>
-          </div>
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/fade-clean.jpg" alt="Crop texture haircut" />
-            </div>
-            <h3>Crop Texture</h3>
-            <p>Teksturiran vrh z modernim volumnom in ostrim prehodom ob strani.</p>
-            <span>od 30 EUR</span>
-          </div>
-          <div class="service-card">
-            <div class="service-image">
-              <img src="images/hero.jpg" alt="Fade and beard combo" />
-            </div>
-            <h3>Fade + Brada</h3>
-            <p>Kombinacija frizure in urejene brade za celovit premium videz.</p>
-            <span>od 38 EUR</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="container">
-        <div class="testimonials-heading">
-          <span class="section-badge">Mnenja strank</span>
-          <h2>Zaupanje, ki se vraca</h2>
-          <p>
-            Dobri rezi pripeljejo stranko prvic. Dober obcutek in konstanten rezultat
-            jo pripeljeta nazaj.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <p>
-              "Top storitev, mirna roka in tocno tak fade kot sem zelel. Ambient je
-              cist in premium."
-            </p>
-            <h3>Matej K.</h3>
-            <span>Redna stranka</span>
-          </article>
-
-          <article class="testimonial-card">
-            <p>
-              "Brada in frizura vedno urejeni v nulo. Termin je hiter, rezultat pa
-              vedno brez pripomb."
-            </p>
-            <h3>Andrej S.</h3>
-            <span>Beard + fade</span>
-          </article>
-
-          <article class="testimonial-card">
-            <p>
-              "Priporocam vsakemu, ki hoce cist, moderen videz. Res profesionalen
-              pristop od zacetka do konca."
-            </p>
-            <h3>Luka P.</h3>
-            <span>Classic taper</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="barbers">
-      <div class="container">
-        <h2>Nas tim</h2>
-        <div class="barbers-grid">
-          <div class="barber-card">
-            <h3>Cani</h3>
-            <p>Master barber za clean fade, detajlno linijo in premium finish.</p>
-          </div>
-          <div class="barber-card">
-            <h3>Stil in svetovanje</h3>
-            <p>Pomagamo izbrati rez in obliko brade glede na obraz in stil.</p>
-          </div>
-          <div class="barber-card">
-            <h3>Dosleden rezultat</h3>
-            <p>Vsak termin temelji na natancnosti, higieni in sproscenem obisku.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="contact-form-section">
-      <div class="container contact-form-grid">
-        <div class="contact-info-box">
-          <span class="contact-form-badge">Kontakt</span>
-          <h2>Rezervacije in vprasanja</h2>
-          <p>
-            Pisi nam za termin, style posvet ali priporocilo storitve glede na tvoj
-            tip las in brade.
-          </p>
-          <div class="contact-info-list" data-parallax="0.03">
-            <p><strong>Naslov:</strong> Presernova cesta 6, Kranj</p>
-            <p><strong>Telefon:</strong> <a href="tel:040697069" class="contact-highlight">040/697/069</a></p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/canibarber" target="_blank" rel="noreferrer" class="contact-highlight">@canibarber</a></p>
-            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/hasang.sopaj" target="_blank" rel="noreferrer" class="contact-highlight">Hasan Sopaj</a></p>
-            <p><strong>Barber:</strong> Hasan Sopaj</p>
-          </div>
-
-          <div class="social-links" aria-label="Social media links">
-            <a href="https://instagram.com/canibarber" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
-              </svg>
-              <span>Instagram</span>
-            </a>
-            <a href="https://www.facebook.com/hasang.sopaj" target="_blank" rel="noreferrer" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.4-.1-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V11H7v3h3v8h3.5Z"/>
-              </svg>
-              <span>Facebook</span>
-            </a>
-          </div>
-
-          <div class="hours-box">
-            <h3>Delovni cas</h3>
-            <p><strong>Pon - Pet:</strong> 09:00 - 19:00</p>
-            <p><strong>Sobota:</strong> 09:00 - 15:00</p>
-            <p><strong>Nedelja:</strong> Zaprto</p>
-          </div>
-        </div>
-
-        <form class="contact-form-box">
           <div class="form-group">
-            <label for="name">Ime in priimek</label>
-            <input type="text" id="name" placeholder="Vnesite svoje ime" />
+            <label for="service">Storitev</label>
+            <input type="text" id="service" placeholder="Fade, brada, paket ..." />
           </div>
+
           <div class="form-group">
-            <label for="phone">Telefonska stevilka</label>
-            <input type="text" id="phone" placeholder="npr. +386 40 697 069" />
+            <label for="message">Sporočilo</label>
+            <textarea id="message" rows="5" placeholder="Napišite želeni termin in morebitne dodatne želje"></textarea>
           </div>
-          <div class="form-group">
-            <label for="service">Zelena storitev</label>
-            <input type="text" id="service" placeholder="Fade, brada, combo..." />
-          </div>
-          <div class="form-group">
-            <label for="message">Sporocilo</label>
-            <textarea id="message" rows="5" placeholder="Zapisite zeleni termin in dodatne zelje"></textarea>
-          </div>
+
           <a
             href="https://wa.me/38640697069?text=Pozdrav,%20zelim%20rezervirati%20termin"
             target="_blank"
             rel="noreferrer"
             class="btn btn-primary form-btn"
           >
-            Rezerviraj termin
+            Pošlji povpraševanje
           </a>
         </form>
-        <div class="contact-map-link">
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Presernova%20cesta%206,%20Kranj"
-            target="_blank"
-            rel="noreferrer"
-            class="btn btn-secondary"
-          >
-            Odpri v Google Maps
-          </a>
-        </div>
       </div>
     </section>
-
-    <section id="onas" class="placeholder-section">
-      <div class="container">
-        <span class="section-badge">O nas</span>
-        <h2>Brivnica z mocnim karakterjem</h2>
-        <p>
-          CANI Barbershop je prostor, kjer sodoben stil sreca natancno barber
-          storitev, dober ambient in rezultat, ki ostane opazen.
-        </p>
-        <p class="about-note">
-          Fokus je na cistem fade-u, urejeni bradi in izkusnji, zaradi katere se
-          stranka rada vrne.
-        </p>
-      </div>
-    </section>
-
-    <section id="rezultati" class="results-section-new">
-      <div class="container">
-        <div class="results-heading-new">
-          <span class="results-badge-new">Rezultati</span>
-          <h2>Nase delo govori samo zase</h2>
-          <p>
-            Precizen fade, cista linija in moderen videz. Tukaj je nekaj izbranih
-            rezultatov nasega dela.
-          </p>
-        </div>
-
-        <div class="results-grid-new four-images">
-          <div class="results-item-new" data-parallax="0.04">
-            <img src="images/fade-main.jpg" alt="Premium fade haircut" />
-          </div>
-          <div class="results-item-new" data-parallax="0.07">
-            <img src="images/fade-texture.jpg" alt="Fade haircut texture view" />
-          </div>
-          <div class="results-item-new" data-parallax="0.05">
-            <img src="images/fade-clean.jpg" alt="Clean fade haircut" />
-          </div>
-          <div class="results-item-new" data-parallax="0.06">
-            <img src="images/hero.jpg" alt="Premium barber haircut detail" />
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h3 class="footer-brand">
-          <img src="images/logo-clean.png" alt="CANI Barbershop logo" class="footer-brand-mark" />
-          <span>CANI BARBERSHOP</span>
-        </h3>
-        <p>Premium barber studio za fade, brado in urejen moski videz.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo cani_1.jpeg" alt="Logotip CANI Barber Shop" class="footer-logo" />
+        <p>CANI Barber Shop . Prefinjen brivski studio v Kranju</p>
       </div>
-      <div class="footer-col">
-        <h4>Navigacija</h4>
-        <a href="#onas">O nas</a>
-        <a href="#storitve">Storitve</a>
-        <a href="#rezultati">Rezultati</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div class="footer-col">
-        <h4>Kontakt</h4>
-        <p>Presernova cesta 6, Kranj</p>
-        <p>040/697/069</p>
-        <p>@canibarber</p>
-        <div class="social-links footer-socials" aria-label="Footer social media links">
-          <a href="https://instagram.com/canibarber" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/hasang.sopaj" target="_blank" rel="noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6H17V4.8c-.4-.1-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V11H7v3h3v8h3.5Z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 CANI Barbershop. Vse pravice pridrzane.</p>
-      <p class="photo-credit">
-        Photo credit for beard reference:
-        <a href="https://commons.wikimedia.org/wiki/File:Beard_trimming_(51211203860).jpg" target="_blank" rel="noreferrer">HairSpies via Wikimedia Commons</a>
-      </p>
+      <p>&copy; 2026 CANI Barber Shop. Vse pravice pridržane.</p>
     </div>
   </footer>
 
@@ -431,14 +476,19 @@
     (() => {
       const typedTarget = document.getElementById("typed-accent");
       const progressBar = document.querySelector(".scroll-progress-bar");
-      const parallaxItems = document.querySelectorAll("[data-parallax]");
-      const phrases = [
-        "skin fade",
-        "beard sculpt",
-        "crop texture",
-        "clean taper",
-        "premium finish"
-      ];
+      const revealItems = document.querySelectorAll("[data-reveal]");
+      const gallerySections = document.querySelectorAll("[data-gallery-scroll]");
+      const vibeStrips = document.querySelectorAll("[data-vibe-strip]");
+      const pageLoader = document.getElementById("page-loader");
+      const phrases = ["precizen fade", "oblikovanje brade", "klasični taper", "teksturiran rez", "dovršen videz"];
+
+      if (pageLoader) {
+        window.addEventListener("load", () => {
+          setTimeout(() => {
+            pageLoader.classList.add("is-hidden");
+          }, 900);
+        });
+      }
 
       if (typedTarget) {
         let phraseIndex = 0;
@@ -481,22 +531,49 @@
         progressBar.style.width = `${progress}%`;
       };
 
-      const updateParallax = () => {
-        const viewportHeight = window.innerHeight;
-        document.querySelectorAll("[data-parallax]").forEach((item) => {
-          const speed = Number(item.dataset.parallax || 0.08);
-          const rect = item.getBoundingClientRect();
-          const offset = (rect.top - viewportHeight / 2) * speed;
-          item.style.transform = `translate3d(0, ${offset}px, 0)`;
+      const updateGalleryScroll = () => {
+        gallerySections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          const rawProgress = (viewportHeight * 0.72 - rect.top) / (rect.height + viewportHeight * 0.22);
+          const progress = Math.max(0, Math.min(rawProgress, 1));
+          const easedProgress = Math.max(0, Math.min((progress - 0.12) / 0.88, 1));
+          const smoothedProgress = easedProgress * easedProgress * (3 - 2 * easedProgress);
+
+          section.style.setProperty("--gallery-progress", smoothedProgress.toFixed(3));
         });
       };
 
+      const updateVibeStrips = () => {
+        vibeStrips.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          const progress = ((viewportHeight - rect.top) / (rect.height + viewportHeight)) * 2 - 1;
+          const clamped = Math.max(-1, Math.min(progress, 1));
+
+          section.style.setProperty("--vibe-shift", (clamped * 2.05).toFixed(3));
+        });
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      revealItems.forEach((item) => revealObserver.observe(item));
       updateProgress();
-      updateParallax();
+      updateGalleryScroll();
+      updateVibeStrips();
       window.addEventListener("scroll", updateProgress, { passive: true });
-      window.addEventListener("scroll", updateParallax, { passive: true });
+      window.addEventListener("scroll", updateGalleryScroll, { passive: true });
+      window.addEventListener("scroll", updateVibeStrips, { passive: true });
       window.addEventListener("resize", updateProgress);
-      window.addEventListener("resize", updateParallax);
+      window.addEventListener("resize", updateGalleryScroll);
+      window.addEventListener("resize", updateVibeStrips);
     })();
   </script>
 </body>
